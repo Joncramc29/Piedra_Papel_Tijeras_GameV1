@@ -105,11 +105,11 @@ def elegir_cpu(dificultad, eleccion_jugador):
 
 def gana_a(jugador):
     if jugador == "piedra":
-        return "papel"
-    elif jugador == "papel":
         return "tijeras"
-    elif jugador == "tijeras":
+    elif jugador == "papel":
         return "piedra"
+    elif jugador == "tijeras":
+        return "papel"
 
 def jugar(dificultad):
     pygame.mixer.music.load("Graphics/music_juego.mp3")
